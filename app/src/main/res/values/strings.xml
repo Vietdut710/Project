@@ -8,6 +8,7 @@
     <string name="signup">Đăng ký</string>
     <string name="username">Tên đăng nhập</string>
     <string name="repassword">Nhập lại mật khẩu</string>
+<<<<<<< HEAD
 
     //
     <string name="personal">Cá nhân</string>
@@ -17,4 +18,7 @@
     <string name="btn_playList">Danh sách quan tâm</string>
     <string name="btn_vipPlayer">Mua VIP</string>
     <string name="btn_logOut">Đăng xuất</string>
+=======
+    <string name="cancel">Hủy bỏ</string>
+>>>>>>> master
 </resources>
