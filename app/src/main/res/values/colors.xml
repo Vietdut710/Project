@@ -19,4 +19,6 @@
     <color name="background_yellow">#E9FB00</color>
     <color name="button_orange">#FF7F00</color>
     <color name="string_blue">#06799F</color>
+    <color name="cyan">#00ffff</color>
+
 </resources>

@@ -103,7 +103,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/login_lo_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
         android:textStyle="italic"
         android:textColor="@color/string_blue"
