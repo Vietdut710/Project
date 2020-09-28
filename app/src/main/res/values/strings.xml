@@ -8,4 +8,5 @@
     <string name="signup">Đăng ký</string>
     <string name="username">Tên đăng nhập</string>
     <string name="repassword">Nhập lại mật khẩu</string>
+    <string name="cancel">Hủy bỏ</string>
 </resources>
