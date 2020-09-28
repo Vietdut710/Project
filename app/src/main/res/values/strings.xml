@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name"> Máy nghe nhạc </string>
+    <string name="account">Tài Khoản</string>
+    <string name="password">Mật Khẩu</string>
+    <string name="forgetpass">Quên mật khẩu?</string>
+    <string name="guestlogin">Đăng nhập với tư cách khách vãng lai!</string>
+    <string name="login">Đăng nhập</string>
+    <string name="signup">Đăng ký</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="repassword">Nhập lại mật khẩu</string>
 </resources>

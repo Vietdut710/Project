@@ -16,5 +16,7 @@
     <color name="darkyellow">#C6B308</color>
     <color name="blue">#3F51B5</color>
     <color name="skyblue">#2196F3</color>
-
+    <color name="background_yellow">#E9FB00</color>
+    <color name="button_orange">#FF7F00</color>
+    <color name="string_blue">#06799F</color>
 </resources>
