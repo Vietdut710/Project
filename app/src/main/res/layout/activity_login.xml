@@ -58,6 +58,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:textColor="@color/string_blue"
         android:text="@string/forgetpass"
         />
     <LinearLayout
@@ -96,6 +98,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:textColor="@color/string_blue"
         android:text="@string/guestlogin"
         />
 
