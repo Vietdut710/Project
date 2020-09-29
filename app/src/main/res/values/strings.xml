@@ -25,6 +25,10 @@
     <string name="btn_vipPlayer">Mua VIP</string>
     <string name="btn_logOut">Đăng xuất</string>
     <string name="cancel">Hủy bỏ</string>
+    <string name="information">Thông tin</string>
+
+    //rank_activity
+    <string name="rank">Xếp hạng</string>
 
 
 </resources>
