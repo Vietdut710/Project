@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_yellow">
+    android:background="@drawable/background_drawable"
+    android:id="@+id/information_layout"
+
+    >
 
 
     <ImageButton
-        android:id="@+id/image_user"
+        android:id="@+id/information_image_user"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:scaleType="centerInside"
@@ -20,10 +24,10 @@
         ></ImageButton>
 
     <TextView
-        android:id="@+id/name_user"
+        android:id="@+id/information_tv_nameuser"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        app:layout_constraintLeft_toRightOf="@id/image_user"
+        app:layout_constraintLeft_toRightOf="@id/information_image_user"
         app:layout_constraintTop_toTopOf="parent"
         android:hint="Name user"
         android:textSize="30dp"
@@ -33,21 +37,21 @@
         ></TextView>
 
     <View
-        android:id="@+id/bar1"
+        android:id="@+id/information_bar1"
         android:layout_width="wrap_content"
         android:layout_height="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_user"
+        app:layout_constraintTop_toBottomOf="@id/information_image_user"
         android:background="@color/string_blue"
         android:layout_marginTop="10dp"
         ></View>
 
     <TextView
-        android:id="@+id/txt1"
+        android:id="@+id/information_tv_txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bar1"
+        app:layout_constraintTop_toBottomOf="@id/information_bar1"
         android:text="@string/personal"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -56,11 +60,11 @@
         ></TextView>
 
     <Button
-        android:id="@+id/btn_notification"
+        android:id="@+id/information_btn_notification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt1"
+        app:layout_constraintTop_toBottomOf="@id/information_tv_txt1"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="@string/btn_notification"
@@ -68,11 +72,11 @@
         ></Button>
 
     <Button
-        android:id="@+id/btn_hobby"
+        android:id="@+id/information_btn_hobby"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_notification"
+        app:layout_constraintTop_toBottomOf="@id/information_btn_notification"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="@string/btn_hobby"
@@ -80,11 +84,11 @@
         ></Button>
 
     <Button
-        android:id="@+id/btn_playList"
+        android:id="@+id/information_btn_playList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_hobby"
+        app:layout_constraintTop_toBottomOf="@id/information_btn_hobby"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="@string/btn_playList"
@@ -92,12 +96,12 @@
         ></Button>
 
     <TextView
-        android:id="@+id/txt2"
+        android:id="@+id/information_tv_txt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/service"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_playList"
+        app:layout_constraintTop_toBottomOf="@id/information_btn_playList"
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="@color/string_blue"
@@ -105,11 +109,11 @@
         ></TextView>
 
     <Button
-        android:id="@+id/btn_vipPlayer"
+        android:id="@+id/information_btn_vipPlayer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt2"
+        app:layout_constraintTop_toBottomOf="@id/information_tv_txt2"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="@string/btn_vipPlayer"
@@ -117,21 +121,21 @@
         ></Button>
 
     <View
-        android:id="@+id/bar2"
+        android:id="@+id/information_bar2"
         android:layout_width="wrap_content"
         android:layout_height="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_vipPlayer"
+        app:layout_constraintTop_toBottomOf="@id/information_btn_vipPlayer"
         android:background="@color/string_blue"
         android:layout_marginTop="10dp"
         ></View>
 
     <Button
-        android:id="@+id/btn_logOut"
+        android:id="@+id/information_btn_logOut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bar2"
+        app:layout_constraintTop_toBottomOf="@id/information_bar2"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
