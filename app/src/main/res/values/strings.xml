@@ -14,11 +14,7 @@
     //information_activity
     <string name="personal">Cá nhân</string>
     <string name="service">Dịch vụ</string>
-<<<<<<< HEAD
     <string name="search">Tìm kiếm</string>
-<!--    Lỗi ở đây-->
-=======
->>>>>>> 686a4074fec8d1d3a1b1dafea9bb036e4d994647
     <string name="btn_notification">Thông báo</string>
     <string name="btn_hobby">Sở thích âm nhạc</string>
     <string name="btn_playList">Danh sách quan tâm</string>
