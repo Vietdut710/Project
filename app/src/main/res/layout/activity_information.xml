@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_yellow"
-    >
+    android:background="@color/background_yellow">
+
 
     <ImageButton
         android:id="@+id/image_user"
@@ -19,19 +19,18 @@
         android:layout_margin="10dp"
         ></ImageButton>
 
-    <EditText
+    <TextView
         android:id="@+id/name_user"
         android:layout_width="200dp"
         android:layout_height="50dp"
         app:layout_constraintLeft_toRightOf="@id/image_user"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/background_yellow"
         android:hint="Name user"
         android:textSize="30dp"
         android:textColor="@color/string_blue"
         android:layout_margin="10dp"
 
-        ></EditText>
+        ></TextView>
 
     <View
         android:id="@+id/bar1"
@@ -39,7 +38,7 @@
         android:layout_height="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_user"
-        android:background="@color/purple_200"
+        android:background="@color/string_blue"
         android:layout_marginTop="10dp"
         ></View>
 
@@ -123,7 +122,7 @@
         android:layout_height="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_vipPlayer"
-        android:background="@color/purple_200"
+        android:background="@color/string_blue"
         android:layout_marginTop="10dp"
         ></View>
 
