@@ -8,14 +8,23 @@
     <string name="signup">Đăng ký</string>
     <string name="username">Tên đăng nhập</string>
     <string name="repassword">Nhập lại mật khẩu</string>
+
+
+
+    //information_activity
     <string name="personal">Cá nhân</string>
     <string name="service">Dịch vụ</string>
+<<<<<<< HEAD
     <string name="search">Tìm kiếm</string>
 <!--    Lỗi ở đây-->
+=======
+>>>>>>> 686a4074fec8d1d3a1b1dafea9bb036e4d994647
     <string name="btn_notification">Thông báo</string>
     <string name="btn_hobby">Sở thích âm nhạc</string>
     <string name="btn_playList">Danh sách quan tâm</string>
     <string name="btn_vipPlayer">Mua VIP</string>
     <string name="btn_logOut">Đăng xuất</string>
     <string name="cancel">Hủy bỏ</string>
+
+
 </resources>
