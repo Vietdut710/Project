@@ -1,27 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
-<<<<<<< HEAD
-<!--    <item-->
-<!--        android:id="@+id/item0"-->
-<!--        android:title="@string/menu_dashboard"-->
-<!--        android:icon="@drawable/ic_dashboard_white_24dp"/>-->
-
-<!--    <item-->
-<!--        android:id="@+id/item1"-->
-<!--        android:title="@string/menu_leaderboard"-->
-<!--        android:icon="@drawable/ic_multiline_chart_white_24dp"/>-->
-
-<!--    <item-->
-<!--        android:id="@+id/item2"-->
-<!--        android:title="@string/menu_store"-->
-<!--        android:icon="@drawable/ic_store_white_24dp"/>-->
-
-<!--    <item-->
-<!--        android:id="@+id/item3"-->
-<!--        android:title="@string/menu_profile"-->
-<!--        android:icon="@drawable/ic_person_outline_white_24dp"/>-->
-=======
     <item
         android:id="@+id/item_person"
         android:title="@string/personal"
@@ -36,6 +14,6 @@
         android:id="@+id/item_information"
         android:title="@string/information"
         android:icon="@drawable/ic_person"/>
->>>>>>> 5dc9bf3afca539d3bef18a826cfc3f52e175052a
+
 
 </menu>

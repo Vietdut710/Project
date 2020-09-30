@@ -1,31 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/imformation_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".InformationActivity"
     android:background="@drawable/background_drawable">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    tools:context=".InformationActivity"
-    android:background="@drawable/background_drawable"
-    >
-=======
-    android:background="@color/background_yellow">
-=======
-    android:background="@drawable/background_drawable"
-    android:id="@+id/information_layout"
-
-    >
->>>>>>> Test
-
->>>>>>> 686a4074fec8d1d3a1b1dafea9bb036e4d994647
->>>>>>> 5dc9bf3afca539d3bef18a826cfc3f52e175052a
-
     <ImageButton
         android:id="@+id/information_image_user"
         android:layout_width="100dp"

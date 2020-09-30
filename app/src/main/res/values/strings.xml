@@ -19,13 +19,9 @@
     <string name="personal">Cá nhân</string>
     <string name="service">Dịch vụ</string>
     <string name="search">Tìm kiếm</string>
-<<<<<<< HEAD
+
     <string name="like">Yêu thích</string>
 <!--    Lỗi ở đây-->
-
-
-=======
->>>>>>> 5dc9bf3afca539d3bef18a826cfc3f52e175052a
     <string name="btn_notification">Thông báo</string>
     <string name="btn_hobby">Sở thích âm nhạc</string>
     <string name="btn_playList">Danh sách quan tâm</string>
@@ -34,10 +30,10 @@
     <string name="cancel">Hủy bỏ</string>
     <string name="information">Thông tin</string>
 
-    //rank_activity
+<!--    //rank_activity-->
     <string name="rank">Xếp hạng</string>
 
-    //play_music_activity
+<!--    //play_music_activity-->
     <string name="name_music">Tên bài hát</string>
 
 

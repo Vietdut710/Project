@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background_drawable"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MenuActivity"
+
     >
     <LinearLayout
         android:id="@+id/menu_lo_head"
