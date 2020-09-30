@@ -10,13 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_android">
 
-<<<<<<< HEAD
         <activity android:name=".LoginActivity">
 
-
-=======
-        <activity android:name=".InformationActivity">
->>>>>>> c83801bce4283cb13c090512eb0130abdaf49959
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
