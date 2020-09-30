@@ -7,14 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InformationActivity"
-<<<<<<< HEAD
     android:background="@drawable/background_drawable"
-    android:id="@+id/information_layout"
     >
 
-=======
-    android:background="@drawable/background_drawable">
->>>>>>> b5cd44b9475f397726035a4e3492f996ca04968b
     <ImageButton
         android:id="@+id/information_image_user"
         android:layout_width="100dp"
