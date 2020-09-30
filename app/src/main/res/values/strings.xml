@@ -26,5 +26,8 @@
     //rank_activity
     <string name="rank">Xếp hạng</string>
 
+    //play_music_activity
+    <string name="name_music">Tên bài hát</string>
+
 
 </resources>
