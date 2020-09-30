@@ -14,6 +14,7 @@ class PersonFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.activity_menu, container, false)
+        //no comment
     }
 
 }
