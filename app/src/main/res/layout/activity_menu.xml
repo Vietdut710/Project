@@ -3,10 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/background_drawable">
+    android:background="@drawable/background_drawable"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MenuActivity"
+    >
     <LinearLayout
-
-        android:id="@+id/lo_head"
+        android:id="@+id/menu_lo_head"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -16,17 +18,21 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
+
+            android:id="@+id/menu_img_search"
             android:layout_width="61dp"
             android:layout_height="51dp"
             android:background="@drawable/bgic_drawable"
             android:src="@drawable/ic_search"
             />
         <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/menu_lo_edt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:borderColor="@color/string_blue"
             >
             <EditText
+                android:id="@+id/menu_edt_search"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/search_drawable"
@@ -34,6 +40,107 @@
                 android:hint="@string/search"
                 />
         </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+    </LinearLayout>
+    <TableLayout
+        android:id="@+id/menu_lo_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/menu_lo_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TableRow>
+            <TextView
+                android:id="@+id/menu_tv_lib"
+                android:text="@string/lib"
+                android:textSize="40dp"
+                android:textColor="@color/string_blue"
+                />
 
+            <ImageView
+                android:id="@+id/menu_img_lib"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_book_24"
+                android:paddingRight="90dp" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/menu_btn_song"
+                android:text="@string/song"
+                android:layout_marginLeft="10dp"
+                android:background="@color/button_orange"
+                android:textColor="@color/yellow"
+                />
+            <Button
+                android:id="@+id/menu_btn_singer"
+                android:text="@string/singer"
+                android:layout_marginLeft="10dp"
+                android:background="@color/button_orange"
+                android:textColor="@color/yellow"
+                />
+            <Button
+                android:id="@+id/menu_btn_mv"
+                android:text="@string/mv"
+                android:background="@color/button_orange"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/yellow"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/menu_btn_like"
+                android:text="@string/like"
+                android:layout_marginLeft="10dp"
+                android:background="@color/button_orange"
+                android:textColor="@color/yellow"
+                />
+            <Button
+                android:id="@+id/menu_btn_download"
+                android:text="@string/download"
+                android:background="@color/button_orange"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/yellow"
+                />
+            <Button
+                android:id="@+id/menu_btn_upload"
+                android:text="@string/upload"
+                android:background="@color/button_orange"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/yellow"
+                />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/menu_lo_lst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toBottomOf="@id/menu_lo_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TableLayout
+            android:id="@+id/menu_lo_tbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <ImageView
+                    android:id="@+id/menu_img_lst"
+                    android:src="@drawable/ic_add_list_24" />
+                <TextView
+                    android:id="@+id/menu_tv_lst"
+                    android:text="@string/playlist"
+                    android:textSize="20dp"
+                    android:textColor="@color/string_blue"
+                    />
+            </TableRow>
+        </TableLayout>
+        <ListView
+            android:id="@+id/menu_lis_song"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,14 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".InformationActivity"
-    android:background="@drawable/background_drawable"
-    >
-=======
-    android:background="@color/background_yellow">
-
->>>>>>> 686a4074fec8d1d3a1b1dafea9bb036e4d994647
+    android:background="@drawable/background_drawable">
 
     <ImageButton
         android:id="@+id/image_user"
