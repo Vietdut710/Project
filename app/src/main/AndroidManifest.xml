@@ -9,9 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App_android">
+<<<<<<< HEAD
 
         <activity android:name=".LoginActivity">
 
+=======
+        <activity android:name=".SongActivity"/>
+        <activity android:name=".MenuActivity"/>
+        <activity android:name=".InformationActivity"/>
+        <activity android:name=".SingerActivity"/>
+        <activity android:name=".PlayMusicActivity"/>
+        <activity android:name=".LoginActivity">
+>>>>>>> 5f7ad68dedad6e9ba1db25f612a7dec9884f7d9b
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
