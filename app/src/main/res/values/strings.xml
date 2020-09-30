@@ -8,12 +8,20 @@
     <string name="signup">Đăng ký</string>
     <string name="username">Tên đăng nhập</string>
     <string name="repassword">Nhập lại mật khẩu</string>
-
-
-
-    //information_activity
+    <string name="playlist">Danh sách phát</string>
+    <string name="createpls">Tạo danh sách phát</string>
+    <string name="lib">Thư viện</string>
+    <string name="song">Bài hát</string>
+    <string name="singer">Ca sĩ</string>
+    <string name="mv">MV</string>
+    <string name="upload">Tải lên</string>
+    <string name="download">Tải xuống</string>
     <string name="personal">Cá nhân</string>
     <string name="service">Dịch vụ</string>
+    <string name="search">Tìm kiếm</string>
+
+    <string name="like">Yêu thích</string>
+<!--    Lỗi ở đây-->
     <string name="btn_notification">Thông báo</string>
     <string name="btn_hobby">Sở thích âm nhạc</string>
     <string name="btn_playList">Danh sách quan tâm</string>
@@ -22,10 +30,10 @@
     <string name="cancel">Hủy bỏ</string>
     <string name="information">Thông tin</string>
 
-    //rank_activity
+<!--    //rank_activity-->
     <string name="rank">Xếp hạng</string>
 
-    //play_music_activity
+<!--    //play_music_activity-->
     <string name="name_music">Tên bài hát</string>
 
 
