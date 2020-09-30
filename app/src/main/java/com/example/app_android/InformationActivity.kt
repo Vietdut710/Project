@@ -15,9 +15,6 @@ class InformationActivity:AppCompatActivity(R.layout.activity_bar_bottom) {
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-<<<<<<< HEAD
-        setContentView(R.layout.activity_menu)
-=======
         navController = findNavController(R.id.main_fragment)
         setupActionBarWithNavController(navController)
 
@@ -32,7 +29,6 @@ class InformationActivity:AppCompatActivity(R.layout.activity_bar_bottom) {
     override fun onSupportNavigateUp(): Boolean {
         navController.navigateUp()
         return true
->>>>>>> Test
     }
 
 

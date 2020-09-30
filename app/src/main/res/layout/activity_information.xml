@@ -5,21 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-<<<<<<< HEAD
     tools:context=".InformationActivity"
     android:background="@drawable/background_drawable"
-    >
-=======
-    android:background="@color/background_yellow">
-=======
-    android:background="@drawable/background_drawable"
     android:id="@+id/information_layout"
-
     >
->>>>>>> Test
-
->>>>>>> 686a4074fec8d1d3a1b1dafea9bb036e4d994647
 
     <ImageButton
         android:id="@+id/information_image_user"
