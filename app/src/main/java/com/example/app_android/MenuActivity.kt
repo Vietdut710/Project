@@ -1,6 +1,8 @@
 package com.example.app_android
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -22,4 +24,18 @@ class MenuActivity : AppCompatActivity() {
         listViewPlaylist = findViewById(R.id.menu_playlist)
         listViewPlaylist?.setAdapter(playListViewArrayAdapter)
     }
+
+    fun onClickSong(view: View) {
+        val intent = Intent(this,SongActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun onClickSinger(view: View) {
+        val intent = Intent(this,SingerActivity::class.java)
+        startActivity(intent)
+    }
+    fun onClickmv(view: View) {}
+    fun onClicklike(view: View) {}
+    fun onClickdownload(view: View) {}
+    fun onClickupload(view: View) {}
 }

@@ -71,6 +71,7 @@
                 android:id="@+id/menu_btn_song"
                 android:text="@string/song"
                 android:layout_marginLeft="10dp"
+                android:onClick="onClickSong"
                 android:background="@color/button_orange"
                 android:textColor="@color/yellow"
                 />
@@ -78,6 +79,7 @@
                 android:id="@+id/menu_btn_singer"
                 android:text="@string/singer"
                 android:layout_marginLeft="10dp"
+                android:onClick="onClickSinger"
                 android:background="@color/button_orange"
                 android:textColor="@color/yellow"
                 />
@@ -85,6 +87,7 @@
                 android:id="@+id/menu_btn_mv"
                 android:text="@string/mv"
                 android:background="@color/button_orange"
+                android:onClick="onClickmv"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/yellow"
                 />
@@ -94,6 +97,7 @@
             <Button
                 android:id="@+id/menu_btn_like"
                 android:text="@string/like"
+                android:onClick="onClicklike"
                 android:layout_marginLeft="10dp"
                 android:background="@color/button_orange"
                 android:textColor="@color/yellow"
@@ -101,6 +105,7 @@
             <Button
                 android:id="@+id/menu_btn_download"
                 android:text="@string/download"
+                android:onClick="onClickdownload"
                 android:background="@color/button_orange"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/yellow"
@@ -108,6 +113,7 @@
             <Button
                 android:id="@+id/menu_btn_upload"
                 android:text="@string/upload"
+                android:onClick="onClickupload"
                 android:background="@color/button_orange"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/yellow"
