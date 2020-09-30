@@ -2,27 +2,22 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/first_fragment">
+    android:id="@+id/mynav"
+    app:startDestination="@id/person_fragment">
 
  <fragment
-     android:id="@+id/first_fragment"
-     android:name="com.example.app_android.InformationFragment"
-     android:label="Thông tin người dùng"
-     tools:layout="@layout/activity_information" />
+     android:id="@+id/person_fragment"
+     android:name="com.example.app_android.PersonFragment"
+     android:label="@string/personal"
+     tools:layout="@layout/activity_menu" />
  <fragment
      android:id="@+id/second_fragment"
      android:name="com.example.app_android.InformationFragment"
      android:label="Second Fragment"
      tools:layout="@layout/activity_information" />
  <fragment
-     android:id="@+id/third_fragment"
+     android:id="@+id/information_fragment"
      android:name="com.example.app_android.InformationFragment"
-     android:label="Third Fragment"
-     tools:layout="@layout/activity_information" />
- <fragment
-     android:id="@+id/fourth_fragment"
-     android:name="com.example.app_android.InformationFragment"
-     android:label="Fourth Fragment"
+     android:label="@string/information"
      tools:layout="@layout/activity_information" />
 </navigation>
