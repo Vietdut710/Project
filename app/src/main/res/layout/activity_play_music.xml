@@ -72,7 +72,7 @@
         ></SeekBar>
 
     <TextView
-        android:id="@id/play_music_time_star"
+        android:id="@+id/play_music_time_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,6 +82,7 @@
         ></TextView>
 
     <TextView
+        android:id="@+id/play_music_time_end"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
