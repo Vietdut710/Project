@@ -20,6 +20,7 @@ class InformationActivity:AppCompatActivity(R.layout.activity_bar_bottom) {
         navController = findNavController(R.id.main_fragment)
         setupActionBarWithNavController(navController)
 
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
