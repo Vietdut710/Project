@@ -1,15 +1,12 @@
 package com.example.app_android
 
-import java.io.Serializable
 
-class Playlist : Serializable {
+
+class Playlist  {
     var playlistName : String ?= null
-    var playlistID : String ?= null
-    constructor(playlistName : String,playlistID: String){
-        this.playlistID = playlistID
+    var playlistID : Long ?= null
+    constructor(playlistID: Long,playlistName : String) {
         this.playlistName = playlistName
-    }
-    override fun toString(): String {
-        return playlistName + " (" + playlistID + ")"
+        this.playlistID = playlistID
     }
 }

@@ -5,6 +5,9 @@ package com.example.app_android
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -19,7 +22,6 @@ class InformationActivity:AppCompatActivity(R.layout.activity_bar_bottom) {
         super.onCreate(savedInstanceState)
         navController = findNavController(R.id.main_fragment)
         setupActionBarWithNavController(navController)
-
 
     }
 

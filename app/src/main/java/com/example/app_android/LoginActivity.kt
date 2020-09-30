@@ -1,5 +1,6 @@
 package com.example.app_android
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -17,8 +18,10 @@ class LoginActivity : AppCompatActivity(),View.OnClickListener {
     }
     fun onClickButtonLogin(view: View) {
         if(login_edt_username.text.toString()=="admin"&&login_edt_password.text.toString()=="admin"){
-            setContentView(R.layout.activity_menu)
+                val intent = Intent(this,InformationActivity::class.java)
+            startActivity(intent)
         }else{
+
             Toast.makeText(this,"Fail",Toast.LENGTH_SHORT).show()
         }
     }

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_android">
 
-        <activity android:name=".InformationActivity">
+        <activity android:name=".SongActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
