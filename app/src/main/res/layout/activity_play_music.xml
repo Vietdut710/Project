@@ -70,4 +70,26 @@
         app:layout_constraintBottom_toTopOf="@id/play_music_previous"
         android:layout_marginBottom="20dp"
         ></SeekBar>
+
+    <TextView
+        android:id="@id/play_music_time_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/play_music_time_music"
+        android:text="00.00"
+        android:textColor="@color/white"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/play_music_time_music"
+        android:text="00.00"
+        android:textColor="@color/white"
+        ></TextView>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
