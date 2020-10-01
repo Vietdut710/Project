@@ -6,13 +6,19 @@ import android.view.View
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 
+
 class MenuActivity : AppCompatActivity() {
-    var listView :ArrayList<Playlist> ?= null
-    var playListViewArrayAdapter : PlayListViewAdapter ?= null
-    var listViewPlaylist :ListView ?= null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
+        createListView()
+
+    }
+    fun createListView(){
+        var listView :ArrayList<Playlist> ?= null
+        var playListViewArrayAdapter : PlayListViewAdapter ?= null
+        var listViewPlaylist :ListView ?= null
 
         listView = ArrayList()
         listView!!.add(Playlist(1,"300 bài hát thiếu nhi"))
@@ -21,7 +27,7 @@ class MenuActivity : AppCompatActivity() {
         listView!!.add(Playlist(4,"Đảng cộng sản muôn năm"))
         playListViewArrayAdapter = PlayListViewAdapter(listView!!)
 
-        listViewPlaylist = findViewById(R.id.menu_playlist)
+        listViewPlaylist =findViewById(R.id.menu_playlist)
         listViewPlaylist?.setAdapter(playListViewArrayAdapter)
     }
 

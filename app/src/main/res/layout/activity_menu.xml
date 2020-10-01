@@ -18,29 +18,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
-
-            android:id="@+id/menu_img_search"
-            android:layout_width="61dp"
-            android:layout_height="51dp"
-            android:background="@drawable/bgic_drawable"
-            android:src="@drawable/ic_search"
-            />
-        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
-            android:id="@+id/menu_lo_edt"
+        <com.iammert.library.ui.multisearchviewlib.MultiSearchView
+            android:id="@+id/menu_multiSearchView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:borderColor="@color/string_blue"
-            >
-            <EditText
-                android:id="@+id/menu_edt_search"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/search_drawable"
-                android:textColor="@color/string_blue"
-                android:hint="@string/search"
-                />
-        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:searchTextStyle="@style/SearchTextStyle"
+
+            />
     </LinearLayout>
     <TableLayout
         android:id="@+id/menu_lo_main"
@@ -133,7 +118,7 @@
         <ListView
             android:id="@+id/menu_playlist"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="360dp"
             android:paddingTop="10dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
