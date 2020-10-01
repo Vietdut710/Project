@@ -18,7 +18,7 @@ class LoginActivity : AppCompatActivity(),View.OnClickListener {
     }
     fun onClickButtonLogin(view: View) {
         if(login_edt_username.text.toString()=="admin"&&login_edt_password.text.toString()=="admin"){
-                val intent = Intent(this,MenuActivity::class.java)
+                val intent = Intent(this,InformationActivity::class.java)
             startActivity(intent)
         }else{
 

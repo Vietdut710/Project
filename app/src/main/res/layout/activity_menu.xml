@@ -23,6 +23,7 @@
             android:id="@+id/menu_img_search"
             android:layout_width="61dp"
             android:layout_height="51dp"
+
             android:background="@drawable/bgic_drawable"
             android:src="@drawable/ic_search"
             />
