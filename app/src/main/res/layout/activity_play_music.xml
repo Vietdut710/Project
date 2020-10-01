@@ -2,22 +2,65 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_play_music"
     >
-    
-    <TextView
-        android:id="@+id/play_music_txt1"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/name_music"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        ></TextView>
+
+<!--    <TextView-->
+<!--        android:id="@+id/play_music_txt1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:text="title"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        ></TextView>-->
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image1"
+            android:layout_centerHorizontal="true"
+            android:text="Title"
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title1"
+            android:layout_centerHorizontal="true"
+            android:text="content"
+            android:textColor="@color/grey"
+            android:textSize="17dp" />
+    </RelativeLayout>
 
     <ImageButton
         android:id="@+id/play_music_previous"
@@ -32,6 +75,7 @@
 
     <ImageButton
         android:id="@+id/play_music_stop"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toRightOf="@id/play_music_previous"
@@ -64,7 +108,7 @@
         ></ImageButton>
 
     <SeekBar
-        android:id="@+id/play_music_time_music"
+        android:id="@+id/play_seekbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/play_music_previous"
