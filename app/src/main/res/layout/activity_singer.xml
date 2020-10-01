@@ -14,7 +14,7 @@
         app:layout_constraintTop_toBottomOf="@id/singer_tv_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-        
+
         <com.iammert.library.ui.multisearchviewlib.MultiSearchView
             android:id="@+id/singer_multiSearchView"
             android:layout_width="match_parent"
