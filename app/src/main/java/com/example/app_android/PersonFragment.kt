@@ -38,6 +38,30 @@ class PersonFragment : Fragment() {
             val intent = Intent(context,SingerActivity::class.java)
             startActivity(intent)
         })
+        //button mv
+        menu_btn_mv.setOnClickListener(View.OnClickListener {
+            Toast.makeText(context,"Click test ok ",Toast.LENGTH_SHORT).show()
+        })
+        //button like
+        menu_btn_like.setOnClickListener(View.OnClickListener {
+            Toast.makeText(context,"Click test ok ",Toast.LENGTH_SHORT).show()
+        })
+        //button download
+        menu_btn_download.setOnClickListener(View.OnClickListener {
+            Toast.makeText(context,"Click test ok ",Toast.LENGTH_SHORT).show()
+        })
+        //button upload
+        menu_btn_upload.setOnClickListener(View.OnClickListener {
+            Toast.makeText(context,"Click test ok ",Toast.LENGTH_SHORT).show()
+        })
+        //create List Play List in home
+        createListPL()
+
+    }
+
+    //-----------------function--------------------//
+
+    fun createListPL(){
         var listView :ArrayList<Playlist> ?= null
         var playListViewArrayAdapter : PlayListViewAdapter ?= null
         var listViewPlaylist : ListView?= null
