@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 
 class PersonFragment : Fragment() {
 
+
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?

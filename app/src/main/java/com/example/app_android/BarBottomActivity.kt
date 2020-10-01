@@ -5,6 +5,9 @@ package com.example.app_android
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -13,13 +16,12 @@ import me.ibrahimsn.lib.SmoothBottomBar
 
 
 
-class InformationActivity:AppCompatActivity(R.layout.activity_bar_bottom) {
+class BarBottomActivity:AppCompatActivity(R.layout.activity_bar_bottom) {
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         navController = findNavController(R.id.main_fragment)
         setupActionBarWithNavController(navController)
-
 
     }
 
