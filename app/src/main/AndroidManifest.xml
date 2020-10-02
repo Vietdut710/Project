@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App_android">
-        <activity android:name=".SongActivity"/>
-        <activity android:name=".MenuActivity"/>
-        <activity android:name=".InformationActivity"/>
-        <activity android:name=".SingerActivity"/>
-        <activity android:name=".PlayMusicActivity"/>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".activity.SongActivity"/>
+        <activity android:name=".activity.MenuActivity"/>
+        <activity android:name=".activity.InformationActivity"/>
+        <activity android:name=".activity.SingerActivity"/>
+        <activity android:name=".activity.PlayMusicActivity"/>
+        <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

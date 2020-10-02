@@ -1,17 +1,15 @@
-package com.example.app_android
+package com.example.app_android.activity
 
 
 
 
 import android.os.Bundle
 import android.view.Menu
-import android.view.View
-import android.widget.ArrayAdapter
-import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.app_android.R
 import me.ibrahimsn.lib.SmoothBottomBar
 
 

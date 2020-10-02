@@ -1,9 +1,11 @@
-package com.example.app_android
+package com.example.app_android.adapter
 
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import com.example.app_android.R
+import com.example.app_android.`object`.Song
 
 class SongAdapter constructor(songAdapter: ArrayList<Song>) : BaseAdapter() {
     var songAdapter : ArrayList<Song> ?= null
@@ -26,7 +28,7 @@ class SongAdapter constructor(songAdapter: ArrayList<Song>) : BaseAdapter() {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val viewSong : View
-        viewSong = convertView ?: View.inflate(parent?.context,R.layout.view_song,null)
+        viewSong = convertView ?: View.inflate(parent?.context, R.layout.view_song,null)
         val songList : Song = getItem(position) as Song
         (viewSong.findViewById<View>(R.id.view_songID)as TextView).text = songList.songID.toString()
         (viewSong.findViewById<View>(R.id.view_songName)as TextView).text = songList.songName.toString()

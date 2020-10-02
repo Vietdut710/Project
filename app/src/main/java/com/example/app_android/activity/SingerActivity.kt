@@ -1,12 +1,15 @@
-package com.example.app_android
+package com.example.app_android.activity
 
 import android.os.Bundle
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.app_android.R
+import com.example.app_android.`object`.Singer
+import com.example.app_android.adapter.SingerAdapter
 
 class SingerActivity : AppCompatActivity() {
     var singerViewPlaylist : ListView ?= null
-    var singerAdapter : SingerAdapter ?= null
+    var singerAdapter : SingerAdapter?= null
     var singerList : ArrayList<Singer> ?= null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

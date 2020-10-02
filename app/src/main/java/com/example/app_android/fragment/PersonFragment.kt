@@ -1,4 +1,4 @@
-package com.example.app_android
+package com.example.app_android.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,11 @@ import android.view.ViewGroup
 import android.widget.ListView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.example.app_android.`object`.Playlist
+import com.example.app_android.R
+import com.example.app_android.activity.SingerActivity
+import com.example.app_android.activity.SongActivity
+import com.example.app_android.adapter.PlayListViewAdapter
 import kotlinx.android.synthetic.main.activity_menu.*
 
 
@@ -30,12 +35,12 @@ class PersonFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         //button Song
         menu_btn_song.setOnClickListener(View.OnClickListener {
-            val intent = Intent(context,SongActivity::class.java)
+            val intent = Intent(context, SongActivity::class.java)
             startActivity(intent)
         })
         //button Singer
         menu_btn_singer.setOnClickListener(View.OnClickListener {
-            val intent = Intent(context,SingerActivity::class.java)
+            val intent = Intent(context, SingerActivity::class.java)
             startActivity(intent)
         })
         //button mv
@@ -63,7 +68,7 @@ class PersonFragment : Fragment() {
 
     fun createListPL(){
         var listView :ArrayList<Playlist> ?= null
-        var playListViewArrayAdapter : PlayListViewAdapter ?= null
+        var playListViewArrayAdapter : PlayListViewAdapter?= null
         var listViewPlaylist : ListView?= null
 
         listView = ArrayList()
