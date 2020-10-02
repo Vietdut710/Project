@@ -1,10 +1,13 @@
-package com.example.app_android
+package com.example.app_android.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.app_android.adapter.PlayListViewAdapter
+import com.example.app_android.`object`.Playlist
+import com.example.app_android.R
 
 
 class MenuActivity : AppCompatActivity() {
@@ -17,7 +20,7 @@ class MenuActivity : AppCompatActivity() {
     }
     fun createListView(){
         var listView :ArrayList<Playlist> ?= null
-        var playListViewArrayAdapter : PlayListViewAdapter ?= null
+        var playListViewArrayAdapter : PlayListViewAdapter?= null
         var listViewPlaylist :ListView ?= null
 
         listView = ArrayList()
@@ -32,12 +35,12 @@ class MenuActivity : AppCompatActivity() {
     }
 
     fun onClickSong(view: View) {
-        val intent = Intent(this,SongActivity::class.java)
+        val intent = Intent(this, SongActivity::class.java)
         startActivity(intent)
     }
 
     fun onClickSinger(view: View) {
-        val intent = Intent(this,SingerActivity::class.java)
+        val intent = Intent(this, SingerActivity::class.java)
         startActivity(intent)
     }
     fun onClickmv(view: View) {}

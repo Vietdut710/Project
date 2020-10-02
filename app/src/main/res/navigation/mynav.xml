@@ -7,17 +7,17 @@
 
  <fragment
      android:id="@+id/person_fragment"
-     android:name="com.example.app_android.PersonFragment"
+     android:name="com.example.app_android.fragment.PersonFragment"
      android:label="@string/personal"
      tools:layout="@layout/activity_menu" />
  <fragment
      android:id="@+id/second_fragment"
-     android:name="com.example.app_android.InformationFragment"
+     android:name="com.example.app_android.fragment.InformationFragment"
      android:label="Second Fragment"
      tools:layout="@layout/activity_information" />
  <fragment
      android:id="@+id/information_fragment"
-     android:name="com.example.app_android.InformationFragment"
+     android:name="com.example.app_android.fragment.InformationFragment"
      android:label="@string/information"
      tools:layout="@layout/activity_information" />
 </navigation>

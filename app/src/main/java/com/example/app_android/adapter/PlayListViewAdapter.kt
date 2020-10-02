@@ -1,10 +1,12 @@
-package com.example.app_android
+package com.example.app_android.adapter
 
 import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import com.example.app_android.`object`.Playlist
+import com.example.app_android.R
 
 class PlayListViewAdapter constructor(listView : ArrayList<Playlist>) : BaseAdapter() {
     var listView : ArrayList<Playlist> ?= null
@@ -27,7 +29,7 @@ class PlayListViewAdapter constructor(listView : ArrayList<Playlist>) : BaseAdap
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val viewList : View
-        viewList = convertView ?: View.inflate(parent?.context,R.layout.view_playlist,null)
+        viewList = convertView ?: View.inflate(parent?.context, R.layout.view_playlist,null)
         val playList : Playlist = getItem(position) as Playlist
         (viewList.findViewById<View>(R.id.view_playlistID)as TextView).text = playList.playlistID.toString()
        (viewList.findViewById<View>(R.id.view_playlistName)as TextView).text = playList.playlistName.toString()
