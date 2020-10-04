@@ -19,9 +19,14 @@ class LoginActivity : AppCompatActivity(),View.OnClickListener {
     }
     fun onClickButtonLogin(view: View) {
         if(login_edt_username.text.toString()=="admin"&&login_edt_password.text.toString()=="admin"){
+<<<<<<< HEAD:app/src/main/java/com/example/app_android/LoginActivity.kt
             setContentView(R.layout.activity_bar_bottom)
             val intent = Intent(this,BarBottomActivity::class.java)
+=======
+                val intent = Intent(this, InformationActivity::class.java)
+>>>>>>> Thanh_branch:app/src/main/java/com/example/app_android/activity/LoginActivity.kt
             startActivity(intent)
+
         }else{
             Toast.makeText(this,"Fail",Toast.LENGTH_SHORT).show()
         }
