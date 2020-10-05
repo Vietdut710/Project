@@ -55,8 +55,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
+            android:inputType="textPassword"
             ></EditText>
+
+
     </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
     <TextView
         android:id="@+id/login_tv_forget"
         android:layout_width="wrap_content"

@@ -37,6 +37,7 @@
 
 <!--    //play_music_activity-->
     <string name="name_music">Tên bài hát</string>
+    <string name="id_music">ID bài hát</string>
 
 
 </resources>
