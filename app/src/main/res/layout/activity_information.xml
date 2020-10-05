@@ -6,11 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    tools:context=".BarBottomActivity"
-=======
     tools:context=".activity.InformationActivity"
->>>>>>> Thanh_branch
     android:background="@drawable/background_drawable"
     >
 

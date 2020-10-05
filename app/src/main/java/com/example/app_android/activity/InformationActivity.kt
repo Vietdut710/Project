@@ -14,7 +14,7 @@ import me.ibrahimsn.lib.SmoothBottomBar
 
 
 
-class BarBottomActivity:AppCompatActivity(R.layout.activity_bar_bottom) {
+class InformationActivity:AppCompatActivity(R.layout.activity_bar_bottom) {
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
