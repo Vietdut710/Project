@@ -9,14 +9,21 @@ import android.view.View
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app_android.R
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2914fa14b46c56ea097e4002f5d1c1ea7dd688df
 import kotlinx.android.synthetic.main.activity_play_music.*
 
 class PlayMusicActivity:AppCompatActivity()  {
 
     private lateinit var media: MediaPlayer
     private var totalTime: Int = 0
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 2914fa14b46c56ea097e4002f5d1c1ea7dd688df
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_play_music)

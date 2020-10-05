@@ -13,11 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_android">
 
+<<<<<<< HEAD
         <activity android:name=".activity.MenuActivity"></activity>
         <activity android:name=".activity.SingerActivity"></activity>
         <activity android:name=".activity.SongActivity"></activity>
         <activity android:name=".activity.BarBottomActivity"></activity>
         <activity android:name=".activity.PlayMusicActivity"></activity>
+=======
+        <activity android:name=".activity.SongActivity"/>
+        <activity android:name=".activity.MenuActivity"/>
+        <activity android:name=".activity.InformationActivity"/>
+        <activity android:name=".activity.SingerActivity"/>
+        <activity android:name=".activity.PlayMusicActivity"/>
+>>>>>>> 2914fa14b46c56ea097e4002f5d1c1ea7dd688df
         <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
