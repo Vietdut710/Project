@@ -5,44 +5,58 @@ import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
 import android.os.Message
+import android.util.Log
 import android.view.View
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app_android.R
-<<<<<<< HEAD
-=======
-
->>>>>>> 2914fa14b46c56ea097e4002f5d1c1ea7dd688df
+import com.example.app_android.adapter.SongAdapter
 import kotlinx.android.synthetic.main.activity_play_music.*
 
-class PlayMusicActivity:AppCompatActivity()  {
+class PlayMusicActivity : AppCompatActivity() {
 
-    private lateinit var media: MediaPlayer
+    lateinit var media: MediaPlayer
     private var totalTime: Int = 0
-<<<<<<< HEAD
+    var currenPos : Int = 0
+    var musicDataList: ArrayList<String> = ArrayList()
 
-
-=======
->>>>>>> 2914fa14b46c56ea097e4002f5d1c1ea7dd688df
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_play_music)
+        Log.d("MAINN", "yes")
 
-        media = MediaPlayer.create(this, R.raw.rise)
+        currenPos = intent!!.getIntExtra(SongAdapter.MUSICITEMPOS, 0)
+        musicDataList = intent.getStringArrayListExtra(SongAdapter.MUSICLIST) as ArrayList<String>
+
+        val dataReceived = intent.extras?.getString("Name")
+        play_music_name?.text = dataReceived
+//
+        media = MediaPlayer()
+        media.setDataSource(musicDataList[currenPos])
+        media.prepare()
+        media.setOnPreparedListener {
+            media.start()
+        }
         media.isLooping = true
         media.setVolume(0.5f, 0.5f)
         totalTime = media.duration
 
         play_music_bar_volume.setOnSeekBarChangeListener(
             object : SeekBar.OnSeekBarChangeListener {
-                override fun onProgressChanged(seekbar: SeekBar?, progress: Int, fromUser: Boolean) {
+                override fun onProgressChanged(
+                    seekbar: SeekBar?,
+                    progress: Int,
+                    fromUser: Boolean
+                ) {
                     if (fromUser) {
                         var volumeNum = progress / 100.0f
                         media.setVolume(volumeNum, volumeNum)
                     }
                 }
+
                 override fun onStartTrackingTouch(p0: SeekBar?) {
                 }
+
                 override fun onStopTrackingTouch(p0: SeekBar?) {
                 }
             }
@@ -50,19 +64,24 @@ class PlayMusicActivity:AppCompatActivity()  {
         play_music_time_music.max = totalTime
         play_music_time_music.setOnSeekBarChangeListener(
             object : SeekBar.OnSeekBarChangeListener {
-                override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                override fun onProgressChanged(
+                    seekBar: SeekBar?,
+                    progress: Int,
+                    fromUser: Boolean
+                ) {
                     if (fromUser) {
                         media.seekTo(progress)
                     }
                 }
+
                 override fun onStartTrackingTouch(p0: SeekBar?) {
                 }
+
                 override fun onStopTrackingTouch(p0: SeekBar?) {
                 }
             }
         )
 
-        // Thread
         Thread(Runnable {
             while (media != null) {
                 try {
@@ -106,16 +125,28 @@ class PlayMusicActivity:AppCompatActivity()  {
     }
 
 
-
-    fun BtnPlayOnClick(view: View){
-        if(media.isPlaying){
+    fun BtnPlayOnClick(view: View) {
+        if (media.isPlaying) {
             media.pause()
             play_music_play.setBackgroundResource(R.drawable.ic_play)
-        }
-        else {
+        } else {
             media.start()
-            play_music_play.setBackgroundResource(R.drawable.ic_stop)
+            play_music_play.setBackgroundResource(R.drawable.ic_pause)
         }
-    }}
+    }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
 
 

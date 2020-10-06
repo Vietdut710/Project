@@ -1,12 +1,10 @@
 package com.example.app_android.`object`
 
-class Song constructor(songID : String, songName : String) {
-    var songID : String ?= null
-    var songName : String ?= null
+class Song (songID : String, songName : String, songPath : String) {
+    var songID = songID
+    var songName = songName
+    var songPath = songPath
 
-    init {
-        this.songID = songID
-        this.songName = songName
-    }
+
 
 }

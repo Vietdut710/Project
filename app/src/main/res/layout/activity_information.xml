@@ -6,11 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".activity.BarBottomActivity"
-=======
-    tools:context=".activity.InformationActivity"
->>>>>>> 2914fa14b46c56ea097e4002f5d1c1ea7dd688df
     android:background="@drawable/background_drawable"
     >
 
