@@ -2,8 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.app_android">
 
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+=======
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" ></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+>>>>>>> 35963926eccf2669c570f0734d258b80d634d3d9
 
     <application
         android:allowBackup="true"
@@ -16,6 +23,7 @@
         >
 
 
+<<<<<<< HEAD
         <activity android:name=".activity.SongOffActivity"/>
         <activity android:name=".activity.MenuActivity"/>
         <activity android:name=".activity.BarBottomActivity"/>
@@ -24,14 +32,26 @@
         <activity android:name=".activity.PlayMusicActivity"/>
         <activity android:name=".activity.LoginActivity"/>
         <activity android:name=".activity.SongOnlineActivity">
+=======
+
+        <activity android:name=".activity.MenuActivity"></activity>
+        <activity android:name=".activity.SingerActivity"></activity>
+        <activity android:name=".activity.SongActivity"></activity>
+        <activity android:name=".activity.BarBottomActivity"></activity>
+        <activity android:name=".activity.PlayMusicActivity"></activity>
+        <activity android:name=".activity.LoginActivity">
+>>>>>>> 35963926eccf2669c570f0734d258b80d634d3d9
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SEARCH" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <service android:name=".activity.PlayMusicActivity"></service>
 
+=======
+>>>>>>> 35963926eccf2669c570f0734d258b80d634d3d9
     </application>
     <meta-data
         android:name="android.app.searchable"
