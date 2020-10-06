@@ -1,4 +1,4 @@
-package com.example.app_android.`object`
+package com.example.app_android.obj
 
 class Singer constructor(singerID : Long,singerName : String) {
     var singerID : Long ?= null

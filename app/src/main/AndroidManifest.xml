@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.app_android">
 
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -11,29 +11,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.App_android">
+        android:theme="@style/Theme.App_android"
+        android:usesCleartextTraffic="true"
+        >
 
-<<<<<<< HEAD
-        <activity android:name=".activity.MenuActivity"></activity>
-        <activity android:name=".activity.SingerActivity"></activity>
-        <activity android:name=".activity.SongActivity"></activity>
-        <activity android:name=".activity.BarBottomActivity"></activity>
-        <activity android:name=".activity.PlayMusicActivity"></activity>
-=======
-        <activity android:name=".activity.SongActivity"/>
+
+        <activity android:name=".activity.SongOffActivity"/>
         <activity android:name=".activity.MenuActivity"/>
+        <activity android:name=".activity.BarBottomActivity"/>
         <activity android:name=".activity.InformationActivity"/>
         <activity android:name=".activity.SingerActivity"/>
         <activity android:name=".activity.PlayMusicActivity"/>
->>>>>>> 2914fa14b46c56ea097e4002f5d1c1ea7dd688df
-        <activity android:name=".activity.LoginActivity">
+        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.SongOnlineActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.SEARCH" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <service android:name=".activity.PlayMusicActivity"></service>
+
     </application>
+    <meta-data
+        android:name="android.app.searchable"
+        android:resource="@xml/searchable" />
 
 </manifest>

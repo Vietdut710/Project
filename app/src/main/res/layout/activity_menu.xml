@@ -67,7 +67,7 @@
 
         <TableRow>
             <Button
-                android:id="@+id/menu_btn_song"
+                android:id="@+id/menu_btn_songoff"
                 android:text="@string/song"
                 android:layout_marginLeft="10dp"
                 android:onClick="onClickSong"
@@ -83,10 +83,10 @@
                 android:textColor="@color/yellow"
                 />
             <Button
-                android:id="@+id/menu_btn_mv"
-                android:text="@string/mv"
+                android:id="@+id/menu_btn_songon"
+                android:text="@string/song"
                 android:background="@color/button_orange"
-                android:onClick="onClickmv"
+                android:onClick="onClicksongon"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/yellow"
                 />

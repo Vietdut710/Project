@@ -7,19 +7,19 @@
     android:padding="20dp">
 
     <TextView
-        android:id="@+id/view_songID"
+        android:id="@+id/view_songoffID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/string_blue"
         />
     <TextView
-        android:id="@+id/view_songName"
+        android:id="@+id/view_songoffName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/string_blue"
         android:textStyle="bold" />
     <Button
-        android:id="@+id/view_song_delete"
+        android:id="@+id/view_songoff_delete"
         android:layout_gravity="right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

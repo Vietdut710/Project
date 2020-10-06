@@ -22,7 +22,7 @@
                 android:id="@+id/song_item"
                 >
                 <TextView
-                    android:id="@+id/song_id_music"
+                    android:id="@+id/songoff_id_music"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:text="@string/id_music"
@@ -32,8 +32,8 @@
                     ></TextView>
 
                 <TextView
-                    android:id="@+id/song_name_music"
-                    android:layout_below="@+id/song_id_music"
+                    android:id="@+id/songoff_name_music"
+                    android:layout_below="@+id/songoff_id_music"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:text="@string/name_music"

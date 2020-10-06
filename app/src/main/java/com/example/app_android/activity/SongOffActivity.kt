@@ -1,37 +1,27 @@
 package com.example.app_android.activity
 
 import android.Manifest
-import android.content.Intent
 import android.content.pm.PackageManager
 import android.database.Cursor
 import android.os.Bundle
 import android.provider.MediaStore
-import android.view.View
-import android.widget.Button
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.app_android.R
-import com.example.app_android.`object`.Song
-import com.example.app_android.adapter.SongAdapter
-import kotlinx.android.synthetic.main.activity_information.*
-import kotlinx.android.synthetic.main.activity_play_music.*
-import kotlinx.android.synthetic.main.activity_song.*
-import kotlinx.android.synthetic.main.recycle_view_song.*
+import com.example.app_android.obj.SongOffline
+import com.example.app_android.adapter.SongOfflineAdapter
+import kotlinx.android.synthetic.main.recycle_view_songoff.*
 
-class SongActivity: AppCompatActivity() {
-    var songList:ArrayList<Song> = ArrayList()
-    var songAdapter:SongAdapter?=null
+class SongOffActivity: AppCompatActivity() {
+    var songList:ArrayList<SongOffline> = ArrayList()
+    var songAdapter:SongOfflineAdapter?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.recycle_view_song)
+        setContentView(R.layout.recycle_view_songoff)
 
 
 
@@ -63,12 +53,12 @@ class SongActivity: AppCompatActivity() {
         while (songFind!=null && songFind.moveToNext()){
             var songID = songFind.getString(songFind.getColumnIndex(MediaStore.Audio.Media.BUCKET_ID))
             var songName = songFind.getString(songFind.getColumnIndex(MediaStore.Audio.Media.TITLE))
-            songList.add(Song(songID,songName))
+            songList.add(SongOffline(songID,songName))
         }
-        songAdapter = SongAdapter(songList, applicationContext)
+        songAdapter = SongOfflineAdapter(songList, applicationContext)
         var layoutManager =LinearLayoutManager(applicationContext)
-        recycle_song.layoutManager = layoutManager
-        recycle_song.adapter = songAdapter
+        recycle_songoff.layoutManager = layoutManager
+        recycle_songoff.adapter = songAdapter
     }
 
 //    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -7,10 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app_android.R
-import com.example.app_android.`object`.Song
+import com.example.app_android.obj.SongOffline
 import com.example.app_android.activity.PlayMusicActivity
 import com.example.app_android.role.onClickSong
 
@@ -43,7 +42,7 @@ import com.example.app_android.role.onClickSong
 //    }
 //}
 
-class SongAdapter(Song:ArrayList<Song>, context: Context):RecyclerView.Adapter<SongAdapter.SongViewHolder>(){
+class SongOfflineAdapter(Song:ArrayList<SongOffline>, context: Context):RecyclerView.Adapter<SongOfflineAdapter.SongViewHolder>(){
     var mContext = context
     var mSong = Song
 
@@ -51,7 +50,7 @@ class SongAdapter(Song:ArrayList<Song>, context: Context):RecyclerView.Adapter<S
         val MUSICLIST = "musiclist"
     }
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): SongViewHolder {
-        var view = LayoutInflater.from(p0!!.context).inflate(R.layout.activity_song,p0,false)
+        var view = LayoutInflater.from(p0!!.context).inflate(R.layout.activity_songoff,p0,false)
         return SongViewHolder(view)
     }
 
@@ -78,8 +77,8 @@ class SongAdapter(Song:ArrayList<Song>, context: Context):RecyclerView.Adapter<S
         var mOnClickOnClickSong: onClickSong?=null
 
         init {
-            songID = list.findViewById(R.id.song_id_music)
-            songName = list.findViewById(R.id.song_name_music)
+            songID = list.findViewById(R.id.songoff_id_music)
+            songName = list.findViewById(R.id.songoff_name_music)
             itemView.setOnClickListener(this)
             list.setOnClickListener {
                 val intent = Intent(list.context, PlayMusicActivity::class.java)

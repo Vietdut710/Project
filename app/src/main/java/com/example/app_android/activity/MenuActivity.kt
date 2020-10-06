@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app_android.adapter.PlayListViewAdapter
-import com.example.app_android.`object`.Playlist
+import com.example.app_android.obj.Playlist
 import com.example.app_android.R
 
 
@@ -35,7 +35,7 @@ class MenuActivity : AppCompatActivity() {
     }
 
     fun onClickSong(view: View) {
-        val intent = Intent(this, SongActivity::class.java)
+        val intent = Intent(this, SongOffActivity::class.java)
         startActivity(intent)
     }
 
@@ -43,7 +43,10 @@ class MenuActivity : AppCompatActivity() {
         val intent = Intent(this, SingerActivity::class.java)
         startActivity(intent)
     }
-    fun onClickmv(view: View) {}
+    fun onClicksongon(view: View) {
+        val intent = Intent(this, SongOnlineActivity::class.java)
+        startActivity(intent)
+    }
     fun onClicklike(view: View) {}
     fun onClickdownload(view: View) {}
     fun onClickupload(view: View) {}

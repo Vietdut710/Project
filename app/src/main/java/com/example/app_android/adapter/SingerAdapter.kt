@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.app_android.R
-import com.example.app_android.`object`.Singer
+import com.example.app_android.obj.Singer
 
 class SingerAdapter constructor(singerAdapter: ArrayList<Singer>) : BaseAdapter() {
     var singerAdapter : ArrayList<Singer> ?= null

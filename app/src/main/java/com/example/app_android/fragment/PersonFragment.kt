@@ -8,10 +8,11 @@ import android.view.ViewGroup
 import android.widget.ListView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.app_android.`object`.Playlist
+import com.example.app_android.obj.Playlist
 import com.example.app_android.R
 import com.example.app_android.activity.SingerActivity
-import com.example.app_android.activity.SongActivity
+import com.example.app_android.activity.SongOffActivity
+import com.example.app_android.activity.SongOnlineActivity
 import com.example.app_android.adapter.PlayListViewAdapter
 import kotlinx.android.synthetic.main.activity_menu.*
 
@@ -34,8 +35,8 @@ class PersonFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //button Song
-        menu_btn_song.setOnClickListener(View.OnClickListener {
-            val intent = Intent(context, SongActivity::class.java)
+        menu_btn_songoff.setOnClickListener(View.OnClickListener {
+            val intent = Intent(context, SongOffActivity::class.java)
             startActivity(intent)
         })
         //button Singer
@@ -43,9 +44,10 @@ class PersonFragment : Fragment() {
             val intent = Intent(context, SingerActivity::class.java)
             startActivity(intent)
         })
-        //button mv
-        menu_btn_mv.setOnClickListener(View.OnClickListener {
-            Toast.makeText(context,"Click test ok ",Toast.LENGTH_SHORT).show()
+        //button songonline
+        menu_btn_songon.setOnClickListener(View.OnClickListener {
+            val intent = Intent(context, SongOnlineActivity::class.java)
+            startActivity(intent)
         })
         //button like
         menu_btn_like.setOnClickListener(View.OnClickListener {
